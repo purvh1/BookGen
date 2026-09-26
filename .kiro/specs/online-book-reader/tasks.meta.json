@@ -11,6 +11,11 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404512671
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405126697
       }
     ],
     "2. SQLite database layer": [
@@ -18,6 +23,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404501990
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405136859
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405394956
       }
     ],
     "3. Book JSON loader": [
@@ -25,6 +40,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502062
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405403536
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405612241
       }
     ],
     "4. Book catalog API routes": [
@@ -32,6 +57,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502115
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405619783
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405751967
       }
     ],
     "5. Auth API routes (register, login, logout, me)": [
@@ -39,6 +74,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502180
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790405760095
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406299149
       }
     ],
     "6. Reading progress API": [
@@ -46,6 +91,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502244
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406307549
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406381161
       }
     ],
     "7. Bookmarks API": [
@@ -53,6 +108,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502298
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406392917
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406552805
       }
     ],
     "8. Annotations API": [
@@ -60,6 +125,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502348
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406561787
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406915091
       }
     ],
     "9. Catalog UI (home + catalog pages)": [
@@ -67,6 +142,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502398
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790406924253
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790407533292
       }
     ],
     "10. Reader UI": [
@@ -74,6 +159,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502482
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790407543184
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790407799047
       }
     ],
     "11. Auth UI (login + register pages)": [
@@ -81,6 +176,16 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502561
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790407809511
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790408669394
       }
     ],
     "12. Sample book data": [
@@ -88,6 +193,11 @@
         "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
         "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
         "timestamp": 1790404502616
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790408675159
       }
     ]
   }

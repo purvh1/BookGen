@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Auto Commit on Stop",
+      "trigger": "Stop",
+      "description": "Stages and commits all changes after agent execution stops",
+      "action": {
+        "type": "command",
+        "command": "cd /Users/purvh/cline-ws/kiro-projects/bookgen && git add -A && git diff --cached --quiet || git commit -m \"auto: save changes\""
+      }
+    }
+  ]
+}

@@ -2,18 +2,18 @@
 
 ## Task List
 
-- [-] 1. Project scaffolding
-- [~] 2. SQLite database layer
-- [~] 3. Book JSON loader
-- [~] 4. Book catalog API routes
-- [~] 5. Auth API routes (register, login, logout, me)
-- [~] 6. Reading progress API
-- [~] 7. Bookmarks API
-- [~] 8. Annotations API
-- [~] 9. Catalog UI (home + catalog pages)
-- [~] 10. Reader UI
-- [~] 11. Auth UI (login + register pages)
-- [~] 12. Sample book data
+- [x] 1. Project scaffolding
+- [x] 2. SQLite database layer
+- [x] 3. Book JSON loader
+- [x] 4. Book catalog API routes
+- [x] 5. Auth API routes (register, login, logout, me)
+- [x] 6. Reading progress API
+- [x] 7. Bookmarks API
+- [x] 8. Annotations API
+- [x] 9. Catalog UI (home + catalog pages)
+- [x] 10. Reader UI
+- [x] 11. Auth UI (login + register pages)
+- [x] 12. Sample book data
 
 ---
 
