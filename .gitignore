@@ -38,3 +38,6 @@ next-env.d.ts
 # SQLite database files (runtime data)
 /db/
 !/db/.gitkeep
+
+
+.env
