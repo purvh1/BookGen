@@ -1,34 +1,13 @@
 import {
   BedrockRuntimeClient,
-  InvokeModelCommand,
+  ConverseCommand,
 } from "@aws-sdk/client-bedrock-runtime";
-
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-interface ClaudeMessage {
-  role: "user" | "assistant";
-  content: string;
-}
-
-interface ClaudeRequestBody {
-  anthropic_version: string;
-  max_tokens: number;
-  messages: ClaudeMessage[];
-}
-
-interface ClaudeContentBlock {
-  type: string;
-  text: string;
-}
-
-interface ClaudeResponse {
-  content: ClaudeContentBlock[];
-}
 
 // ─── BedrockProvider ──────────────────────────────────────────────────────────
 
 /**
- * Thin wrapper around `@aws-sdk/client-bedrock-runtime` for Claude inference.
+ * Thin wrapper around `@aws-sdk/client-bedrock-runtime` using the model-agnostic
+ * Converse API — works with Claude, Kimi K3, and any other Bedrock model.
  *
  * Reads `AWS_REGION` and `BEDROCK_MODEL_ID` from `process.env` at construction
  * time and throws a descriptive error if either is absent.
@@ -64,48 +43,57 @@ export class BedrockProvider {
     this.client = new BedrockRuntimeClient({
       region,
       ...(accessKeyId && secretAccessKey
-        ? {
-            credentials: {
-              accessKeyId,
-              secretAccessKey,
-            },
-          }
+        ? { credentials: { accessKeyId, secretAccessKey } }
         : {}),
     });
   }
 
   /**
-   * Send a plain-text prompt to the configured Claude model and return the
-   * model's text reply.
+   * Send a plain-text prompt via the Converse API and return the model's text reply.
+   *
+   * Scans all content blocks for the first one containing a `text` field — this
+   * handles reasoning models (e.g. Kimi K3) that emit a `reasoningContent` block
+   * before the actual text response.
    *
    * @param prompt - The user message to send.
-   * @returns The raw text of the first content block in the response.
+   * @returns The text of the first text-bearing content block in the response.
    * @throws Re-throws any SDK error with its original message preserved.
    */
   async invoke(prompt: string): Promise<string> {
-    const body: ClaudeRequestBody = {
-      anthropic_version: "bedrock-2023-05-31",
-      max_tokens: 8096,
-      messages: [{ role: "user", content: prompt }],
-    };
-
-    const command = new InvokeModelCommand({
+    const command = new ConverseCommand({
       modelId: this.modelId,
-      contentType: "application/json",
-      accept: "application/json",
-      body: JSON.stringify(body),
+      messages: [
+        {
+          role: "user",
+          content: [{ text: prompt }],
+        },
+      ],
+      inferenceConfig: {
+        maxTokens: 8096,
+      },
     });
 
     try {
       const response = await this.client.send(command);
-      const decoded = new TextDecoder().decode(response.body);
-      const parsed = JSON.parse(decoded) as ClaudeResponse;
-      return parsed.content[0].text;
-    } catch (err) {
-      // Re-throw with the original message so callers can inspect it.
-      if (err instanceof Error) {
-        throw new Error(err.message);
+
+      const blocks = response.output?.message?.content ?? [];
+
+      // Reasoning models (e.g. Kimi K3) prepend a reasoningContent block before
+      // the actual text — find the first block that carries a text field.
+      const textBlock = blocks.find(
+        (b): b is { text: string } => "text" in b && typeof b.text === "string"
+      );
+
+      if (!textBlock) {
+        throw new Error(
+          `No text block found in Bedrock response. ` +
+          `Block types received: ${blocks.map((b) => Object.keys(b).join("|")).join(", ")}`
+        );
       }
+
+      return textBlock.text;
+    } catch (err) {
+      if (err instanceof Error) throw new Error(err.message);
       throw err;
     }
   }
