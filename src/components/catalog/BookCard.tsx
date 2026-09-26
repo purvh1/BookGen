@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import ProgressBar from "@/components/ui/ProgressBar";
+import BookCover from "./BookCover";
 
 export interface BookCardProps {
   id: string;
@@ -23,7 +23,6 @@ export default function BookCard({
   author,
   genre,
   description,
-  coverImage,
   chapterCount,
   progress,
 }: BookCardProps) {
@@ -39,25 +38,13 @@ export default function BookCard({
 
   return (
     <article className="flex flex-col bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100 dark:border-gray-700">
-      {/* Cover image */}
-      <div className="relative w-full bg-gray-100 dark:bg-gray-700 flex-shrink-0" style={{ aspectRatio: "200/280" }}>
-        {coverImage ? (
-          <Image
-            src={coverImage}
-            alt={`Cover of ${title}`}
-            width={200}
-            height={280}
-            className="w-full h-full object-cover"
-            unoptimized
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-500">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-            </svg>
-          </div>
-        )}
-      </div>
+      {/* Cover */}
+      <BookCover
+        title={title}
+        author={author}
+        genre={genre}
+        className="w-full"
+      />
 
       {/* Card body */}
       <div className="flex flex-col flex-1 p-3 gap-2">
