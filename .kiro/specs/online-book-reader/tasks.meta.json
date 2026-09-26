@@ -1,0 +1,94 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Project scaffolding": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404501859
+      },
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404512671
+      }
+    ],
+    "2. SQLite database layer": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404501990
+      }
+    ],
+    "3. Book JSON loader": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502062
+      }
+    ],
+    "4. Book catalog API routes": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502115
+      }
+    ],
+    "5. Auth API routes (register, login, logout, me)": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502180
+      }
+    ],
+    "6. Reading progress API": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502244
+      }
+    ],
+    "7. Bookmarks API": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502298
+      }
+    ],
+    "8. Annotations API": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502348
+      }
+    ],
+    "9. Catalog UI (home + catalog pages)": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502398
+      }
+    ],
+    "10. Reader UI": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502482
+      }
+    ],
+    "11. Auth UI (login + register pages)": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502561
+      }
+    ],
+    "12. Sample book data": [
+      {
+        "executionId": "fc22666a-c70d-4a7d-bc2f-051eb531951e",
+        "chatSessionId": "sess_67767aa3-2069-4e40-bb2f-a6225dd275bb",
+        "timestamp": 1790404502616
+      }
+    ]
+  }
+}
